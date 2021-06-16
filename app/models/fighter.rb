@@ -1,2 +1,4 @@
 class Fighter < ApplicationRecord
-end
+
+    has_many :comments
+end 
