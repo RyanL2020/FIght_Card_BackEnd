@@ -3,7 +3,12 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
+    if params[:fighter_id]
+      @fighter = Fighter.find_by_id(params[:fighter_id])
+      @comments = @fighter.comments
+    else
+       @comments = Comment.all
+    end 
 
     render json: @comments
   end

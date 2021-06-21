@@ -77,7 +77,7 @@ Comment.destroy_all
  Comment.create ([{
         author_name: "Bruce Wayne",
         comment: "Exciting fighter",
-        fighter_id: Fighter.all.sample
+        fighter: Fighter.all.sample
 },
 {
        author_name: "Grorge Clooney",
@@ -108,6 +108,7 @@ Comment.destroy_all
         author_name: "Dana WHite",
         comment: "This kid can fight!",
         fighter: Fighter.all.sample
+
 }])
 
 
