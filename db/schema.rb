@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 2021_06_15_131524) do
 
   create_table "fighters", force: :cascade do |t|
     t.string "name"
-    t.string "image_url"
-    t.string "highlight_url"
+    t.string "image_url", default: "No Photo Available"
+    t.string "highlight_url", default: "No Highlights Available "
     t.string "style"
     t.string "organization"
     t.integer "wins"
