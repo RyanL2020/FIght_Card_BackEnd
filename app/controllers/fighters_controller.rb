@@ -35,7 +35,9 @@ class FightersController < ApplicationController
 
   # DELETE /fighters/1
   def destroy
+    ##binding.pry
     @fighter.destroy
+    
   end
 
   private
